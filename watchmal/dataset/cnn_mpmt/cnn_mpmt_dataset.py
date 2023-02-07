@@ -82,8 +82,12 @@ class CNNmPMTDataset(H5Dataset):
             Array in image-like format (channels, rows, columns) for input to CNN network.
         """
         print("Number of hit pmts in this event", hit_pmts.shape)
+        print("Shape of mpmt position map", mpmt_positions.shape)
+        
         hit_mpmts = hit_pmts // pmts_per_mpmt
         hit_pmt_in_modules = hit_pmts % pmts_per_mpmt
+
+        print("Number of hit npmts in this event", hit_mpmts.shape, pmts_per_mpmt)
 
         hit_rows = self.mpmt_positions[hit_mpmts, 0]
         hit_cols = self.mpmt_positions[hit_mpmts, 1]
