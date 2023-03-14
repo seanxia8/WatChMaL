@@ -1,0 +1,3 @@
+split_path: /home/junjiex/pro-junjiex/WatChMaL/config/index/wcte_split_index.npz
+dataset:
+  h5file: /home/junjiex/pro-junjiex/WatChMaL/outputs/WCTE_MC/WCTEmPMT_test/h5/merged/WCTEmPMT_test_emupi0_E100to1500MeV_fix-pos-x0-y0-z0_4pi_10kevts.h5
