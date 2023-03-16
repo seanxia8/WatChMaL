@@ -84,8 +84,6 @@ class CNNmPMTDataset(H5Dataset):
         hit_mpmts = hit_pmts // pmts_per_mpmt
         hit_pmt_in_modules = hit_pmts % pmts_per_mpmt
 
-        print("Number of hit npmts in this event", hit_mpmts.shape, pmts_per_mpmt)
-
         hit_rows = self.mpmt_positions[hit_mpmts, 0]
         hit_cols = self.mpmt_positions[hit_mpmts, 1]
 
